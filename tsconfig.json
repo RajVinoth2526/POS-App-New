@@ -7,10 +7,12 @@
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
-    "module": "esnext",
+    "module": "commonjs",             // <-- Important for Node.js
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2015",
+    "esModuleInterop": true,           // <-- Helpful for clean import
+    "types": ["node", "electron"],     // <-- Add this line
     "lib": [
       "es2018",
       "dom"
